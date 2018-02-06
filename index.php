@@ -14,10 +14,10 @@ class Person{
         //如果程序没有定义构造方法，系统会自动生成一个构造方法，有定义时则覆盖
         //echo $this->name."今年".$this->age."岁";
     }
-    public function __construct()
+    /*public function __construct()
     {
         
-    }
+    }*/
     //php4,与类名一致，两种方法同时存在，调用php5的方法
     /*public function Person()
     {
