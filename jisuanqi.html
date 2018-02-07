@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	function check(){
+		var num1val=document.getElementById("num1").value;
+		var num2val=document.getElementById("num2").value;
+		//alert(num1val);
+		if(isNaN(num1val)||isNaN(num2val)){
+			alert("请输入数字");
+			return false;
+		}else {
+			return true;
+		}
+	}
+</script>
+<body>
+<form action="jisuanqi.php" method="post" onsubmit="return check()">
+num1:<input type="text" name="num1" id="num1"><br/>
+num2:<input type="text" name="num2" id="num2"><br/>
+oper
+<select name="oper">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<input type="submit" value="提交">
+</form>
+</body>
+</html>
